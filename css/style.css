@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#score {
+    margin: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+
+#menuBtn{
+    position:fixed;
+    top:20px;
+    right:20px;
+    font-size:30px;
+    z-index:1000;
+    display: none;
+  }
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background: #333;
+    padding-top: 60px;
+    transition: right 0.3s ease;
+  }
+  
+  .menu.open {
+    right: 0;
+  }
+  
+  .menu a {
+    display: block;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+  }
+  
+  .menu a:hover {
+    background: #444;
+  }
+
+#klickupgrade, #procentklick, #critchansklick, #multipliceringkling, #upphojaklick  {
+    display: none;
+}
+
+.rundtryckknapp{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.plusClass{
+  position: absolute;
+  font-weight: bold;
+  pointer-events: none;
+  animation: flyUp 1s forwards;
+}
+
+@keyframes flyUp {
+  0%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+}
+
+.upgradebutton{
+  padding: 25px;
+  font-size: large;
+  margin: 15px;
+}
+
+.tile{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: none;
+}
